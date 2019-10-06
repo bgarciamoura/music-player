@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Player de Musica com JS</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="player">
+        <h4><i class="material-icons">equalizer</i> Player do Bruno</h4>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="#" class="btn-floating btn-large halfway-fab blue">
+                    <i class="material-icons" id="play-pause">play_arrow</i>
+                </a>
+            </div>
+            <div class="card-content">
+                <h5>Título</h5>
+                <p class="artista">Artista</p>
+                <!-- <audio controls></audio> -->
+                
+                <div class="row valign-wrapper">
+                    <div class="col s2 valing-wrapper">
+                        <a href="#">
+                            <i class="material-icons controls" id="previous">skip_previous</i>
+                        </a>
+                    </div>
+                    <div class="col s2 valing-wrapper">
+                        <a href="#">
+                            <i class="material-icons controls" id="mute">volume_up</i>
+                        </a>
+                    </div>
+                    <div class="col s8 range-field valing-wrapper">
+                        <input type="range" id="vol-control" min="0" max="100" step="1" value="100">
+                    </div>
+                    <div class="col s2 valing-wrapper">
+                        <a href="#">
+                            <i class="material-icons controls" id="btn-next">skip_next</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row valign-wrapper">
+                    <div class="col s2" id="current-duration">00:00</div>
+                    <div class="col s8 range-field valing-wrapper">
+                        <input type="range" id="seekbar" min="0" max="0" step="1">
+                    </div>
+                    <div class="col s2" id="total-duration">00:00</div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    
+    <script src="data.js"></script>
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
